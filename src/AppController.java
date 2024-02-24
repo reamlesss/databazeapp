@@ -1,7 +1,14 @@
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class AppController {
 
@@ -25,8 +32,23 @@ public class AppController {
 
     @FXML
     public void handleInsert() {
-        // Kód pro zpracování události vkládání
-        showAlert("Vložení", "Vkládání informace", "Zpracování vkládání informace.");
+        try {
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("insert.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+
+            Stage stage = new Stage();
+            stage.setTitle("Vložení informace");
+            stage.setScene(scene);
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+
+            stage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

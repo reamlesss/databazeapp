@@ -12,6 +12,8 @@ public class App extends Application {
         primaryStage.setTitle("DatabaseProject");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
+
+        
     }
 
     public static void main(String[] args) {

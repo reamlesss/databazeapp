@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" controller-="AppController">
-    <!-- Horní mezera -->
-    <Region prefHeight="20.0"/>
-    
-    <!-- Popisek pro sekci vkládání, můžete změnit text dle potřeby -->
-    <Label text="Vložení informace:"/>
-
-    <!-- Tlačítko pro vložení -->
-    <Button text="Vložit" onAction="#handleInsert"/>
-
-    <!-- Mezera mezi sekcemi -->
-    <Region prefHeight="20.0"/>
-
-    <!-- Popisek pro sekci smazání, můžete změnit text dle potřeby -->
-    <Label text="Smazání informace:"/>
-
-    <!-- Tlačítko pro smazání -->
-    <Button text="Smazat" onAction="#handleDelete"/>
-
-    <!-- Mezera mezi sekcemi -->
-    <Region prefHeight="20.0"/>
-
-    <!-- Popisek pro sekci úpravy, můžete změnit text dle potřeby -->
-    <Label text="Úprava informace:"/>
-
-    <!-- Tlačítko pro úpravu -->
-    <Button text="Upravit" onAction="#handleUpdate"/>
-
-    <!-- Mezera mezi sekcemi -->
-    <Region prefHeight="20.0"/>
-
-    <!-- Popisek pro sekci importu, můžete změnit text dle potřeby -->
-    <Label text="Import dat:"/>
-
-    <!-- Tlačítko pro import CSV -->
-    <Button text="Import CSV" onAction="#handleImportCSV"/>
-    
-    <!-- Tlačítko pro import XML -->
-    <Button text="Import XML" onAction="#handleImportXML"/>
-
-    <!-- Tlačítko pro import JSON -->
-    <Button text="Import JSON" onAction="#handleImportJSON"/>
-
-    <!-- Spodní mezera -->
-    <Region prefHeight="20.0"/>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+   <children>
+       <!-- Horní mezera -->
+       <Region prefHeight="20.0" />
+       
+       <!-- Popisek pro sekci vkládání, můžete změnit text dle potřeby -->
+       <Label text="Vložení informace:" />
+   
+       <!-- Tlačítko pro vložení -->
+       <Button onAction="#handleInsert" text="Vložit" />
+   
+       <!-- Mezera mezi sekcemi -->
+       <Region prefHeight="20.0" />
+   
+       <!-- Popisek pro sekci smazání, můžete změnit text dle potřeby -->
+       <Label text="Smazání informace:" />
+   
+       <!-- Tlačítko pro smazání -->
+       <Button onAction="#handleDelete" text="Smazat" />
+   
+       <!-- Mezera mezi sekcemi -->
+       <Region prefHeight="20.0" />
+   
+       <!-- Popisek pro sekci úpravy, můžete změnit text dle potřeby -->
+       <Label text="Úprava informace:" />
+   
+       <!-- Tlačítko pro úpravu -->
+       <Button onAction="#handleUpdate" text="Upravit" />
+   
+       <!-- Mezera mezi sekcemi -->
+       <Region prefHeight="20.0" />
+   
+       <!-- Popisek pro sekci importu, můžete změnit text dle potřeby -->
+       <Label text="Import dat:" />
+   
+       <!-- Tlačítko pro import CSV -->
+       <Button onAction="#handleImportCSV" text="Import CSV" />
+       
+       <!-- Tlačítko pro import XML -->
+       <Button onAction="#handleImportXML" text="Import XML" />
+   
+       <!-- Tlačítko pro import JSON -->
+       <Button onAction="#handleImportJSON" text="Import JSON" />
+   
+       <!-- Spodní mezera -->
+       <Region prefHeight="20.0" />
+   </children>
 </VBox>
